@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+section {
+    padding: 100px 0;
+}
+.title .h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+.title .h2::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    margin: 30px auto;
+}
+
+/*nav*/
+.navedit{
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    position: fixed;
+    height: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-color: #671E1D; */
+    background-color: rgb(105 28 24 / 28%);
+ }
+ .nav::after{
+     
+    content: '';
+    background-color: rgba(0,0,0,.45);
+ }
+.nav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav_left{
+    width: 100px;
+    line-height: 80px;
+}
+.nav_right{
+    width: 550px;
+}
+.nav_right ul li{
+    padding: 0 10px;
+    display: inline-block;
+    line-height: 80px;
+}
+.nav_left a{
+    font-size: 24px;
+    font-weight: bold;
+}
+/*home-screen*/
+.home-screen{
+    height: 100vh;
+    background-image: url("../images/home.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position-x: 30%;*/
+    /*background-position-y: 40%;*/
+}
+.home-screen::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.45);
+}
+.greeting{
+    position: absolute;
+    width: 750px;
+    height: 260px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.greeting h1{
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+
+}
+.greeting p{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin: 15px 0 40px 0;
+}
+.btn{
+    /*margin-top: 30px;*/
+    display: block;
+    margin: 0 auto;
+    padding: 9px 21px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.btn:hover{
+    border: none;
+    background: #ff7a59;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+}
+
+/*services*/
+.services p{
+    font-size: 16px;
+    text-align: center;
+
+}
+.services .container{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.blockall{
+    width: 30%;
+    /* background-color: red; */
+}
+.blockall .image {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin: 0 auto 30px;
+    font-size: 35px;
+    line-height: 90px;
+    color: #C0311C;
+    transition: .2s;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.blockall .image.pic1{
+    background-image: url(../images/Jakh.jpeg);
+}
+.blockall .image.pic1:hover {
+    background-image: url(../images/Jakh2.jpeg);
+}
+.blockall .image.pic2{
+    background-image: url(../images/ulukM.jpg);
+    background-position-y: -50%;
+}
+.blockall .image.pic2:hover{
+    background-image: url(../images/ulukM2.jpg);
+}
+.blockall .image.pic3{
+    background-image: url(../images/Egor.jpeg);
+}
+.blockall .image.pic3:hover{
+    background-image: url(../images/Egor2.jpeg);
+}
+
+
+.blockall h1, p{
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* about us */
+.about .team-photo p,h1{
+    text-align: center;
+    padding: 5px;
+}
+.words h1, p{
+    text-align: center;
+    padding: 10px;
+}
+.about h1{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+.about .blockabout{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+
+}
+.blockthree{
+    width: 50%;
+    
+    
+}
+.about{
+    background-color: #F8F8F8;
+}
+.about .blockthree {
+    font-size: 16px;
+    text-align: center;
+}
+/* teamphotos */
+.team-photo{
+    width: 25% ;
+    justify-content: space-between;
+    /* margin: 0 auto 30px; */
+}
+.about .team-members{
+    display: flex;
+    justify-content: space-between;
+}
+.team-members .team-photo .image{
+    width: 255px;
+    height: 265px;
+    
+    border: 1px solid #ddd;
+    margin: 0 auto 10px;
+    font-size: 35px;
+    line-height: 90px;
+    color: #C0311C;
+    transition: .2s;
+    background-size: cover;
+    background-position: center;
+}
+.team-photo .image.pic1{
+    background-image: url(../images/mirbek.jpg);
+}
+
+.team-photo .image.pic2{
+    background-image: url(../images/ed2.jpg);
+}
+.team-photo .image.pic3{
+    background-image: url(../images/miyagi.jpg);
+}
+.team-photo .image.pic4{
+    background-image: url(../images/puth.jpg);
+}
+/*works*/
+.subtitle{
+    display: flex;
+    justify-content: space-between;
+
+}
+.works .textofworks{
+    width: 100%;
+    line-height: 10px;
+    text-align: center;
+}
+.textofworks a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight:lighter;
+}
+.textofworks ul li{
+    list-style-type: none;
+    padding: 0 30px;
+    display: inline-block;
+    line-height: 40px;
+}
+.works .allrows .row-1{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.works .allrows .row-2{
+    display: flex;
+    justify-content: space-around;
+}
+.works .allrows .row-3{
+
+    display: flex;
+    justify-content: space-around;
+}
+.teampicture{
+    width: 33.3%;
+    /*margin: 0 30px;*/
+}
+.workphoto  .image{
+    width: 350px;
+    height: 320px;
+    border: 1px solid #ddd;
+    margin: 0 auto 30px;
+    font-size: 35px;
+    line-height: 90px;
+    color: #C0311C;
+    transition: .5s;
+    background-size: cover;
+    background-position: center;
+}
+.row-1 .image.pic1{
+    background-image: url("../images/work/2.png");
+}
+.row-1 .image.pic2{
+    background-image: url("../images/work/3.png");
+    background-position-y: -1%;
+}
+.row-1 .image.pic3{
+    background-image: url("../images/work/4.png");
+}
+.row-2 .image.pic1{
+    background-image: url("../images/work/5.png");
+}
+.row-2 .image.pic2{
+    background-image: url("../images/work/6.png");
+    background-position-y: -1%;
+}
+.row-2 .image.pic3{
+    background-image: url("../images/work/7.png");
+}
+.row-3 .image.pic1{
+    background-image: url("../images/work/8.png");
+}
+.row-3 .image.pic2{
+
+    background-image: url("../images/work/9.png");
+}
+.row-3 .image.pic3{
+    background-image: url("../images/work/1.png");
+}
+
+.row-3 .image.pic3:hover{
+    background-image: url("../images/work/js8.jpg");
+}
+/* middle */
+section.middle{
+    background: url(../images/work/middle.png);
+    position: relative;
+    background-repeat: no-repeat;
+
+    
+}
+.middle .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 490px;
+    text-align: center;
+    margin: 0 auto;
+}
+.content .h2 {
+    font-size: 30px;
+    color: #fff;
+    line-height: 45px;
+    z-index: 1;
+}
+.btn-2{
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 5px;
+    z-index: 1;
+    font-size: 16px;
+}
+
+/* .btn-2:hover {
+    color: #fff;
+    background-color: #000;
+} */
+@media (max-width: 490px) {
+    .content {
+        width: 100%;
+    }
+}
+@media (max-width: 1140px) {
+    .content .h2{
+        font-size: calc(13px + (27 + 27 * 0.7) * ((100vw - 320px) / 1600));
+    }
+    .btn-2 {
+        font-size: calc(8px + (8 + 8 * 0.7) * ((100vw - 320px) / 1600));  
+    }
+}
+.btn-2:hover{
+    border: none;
+    background: #ff7a59;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+}
+.middle::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #af23118c;
+    
+}
+/* recentblogposts */
+.recent-blog p{
+    text-align: center;
+    padding: 30px 0;
+
+
+}
+.recent-blog .row_1{
+    display: flex;
+
+
+}
+.row_1 .img{
+    width: 100%;
+    height: 330px;
+
+}
+.row_1 .img.first{
+    background-image: url(../images/recentblog/1.png);
+    background-repeat: no-repeat;
+}
+.row_1 p{
+    margin-left: 30px;
+    line-height: 25px;
+    font-size: 16px;
+    width: 650px;
+}
